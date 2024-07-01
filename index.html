@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD Bike</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #hero {
+            position: relative;
+        }
+
+        #hero img {
+            width: 100%;
+            height: auto;
+        }
+
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 1em;
+            text-align: center;
+        }
+
+        #featured-bikes {
+            padding: 2em;
+            text-align: center;
+        }
+
+        .bike-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .bike {
+            background: #fff;
+            margin: 1em;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            max-width: 200px;
+        }
+
+        .bike img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        #contact {
+            background: #333;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5em 0;
+            }
+            nav ul li {
+                margin: 0 0.5em;
+            }
+            .bike {
+                max-width: 100%;
+            }
+            .hero-text {
+                padding: 1em;
+            }
+            footer {
+                padding: 0.5em 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                margin: 0 0.3em;
+            }
+            .bike {
+                margin: 0.5em;
+            }
+            .hero-text {
+                font-size: 0.9em;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .hero-text {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to BD Bike</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <img src="shopfromoutside.JPG" alt="Bike Shop">
+        <div class="hero-text">
+            <h2>Your One-Stop Bike Shop</h2>
+            <p>Sales, Repairs, Accessories, and Maintenance</p>
+        </div>
+    </section>
+
+    <section id="featured-bikes">
+        <h2>Featured Bikes</h2>
+        <div class="bike-grid">
+            <!-- Blue Bike -->
+            <div class="bike">
+                <a href="bluebike1.JPG" data-lightbox="bikes" data-title="Blue Bike">
+                    <img src="bluebike1.JPG" alt="Blue Bike">
+                </a>
+                <a href="bluebike2.JPG" data-lightbox="bikes" data-title="Blue Bike">
+                    <img src="bluebike2.JPG" alt="Blue Bike">
+                </a>
+                <a href="bluebike3.JPG" data-lightbox="bikes" data-title="Blue Bike">
+                    <img src="bluebike3.JPG" alt="Blue Bike">
+                </a>
+                <a href="bluebike4.JPG" data-lightbox="bikes" data-title="Blue Bike">
+                    <img src="bluebike4.JPG" alt="Blue Bike">
+                </a>
+                <h3>Blue Bike</h3>
+                <p>1000W Motor, 60km/h</p>
+            </div>
+            <!-- Green Bike -->
+            <div class="bike">
+                <a href="greenbike1.JPG" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="greenbike1.JPG" alt="Full Blue Bike">
+                </a>
+                <a href="greenbike2.JPG" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="greenbike2.JPG" alt="Full Blue Bike">
+                </a>
+                <a href="greenbike3.JPG" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="greenbike3.JPG" alt="Full Blue Bike">
+                </a>
+                <a href="greenbike4.JPG" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="greenbike4.JPG" alt="Full Blue Bike">
+                </a>
+                <h3>Green Bike</h3>
+                <p>Additional Details</p>
+            </div>
+            <!-- Add fullbluebike images -->
+            <div class="bike">
+                <a href="fullbluebike1.jpg" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="fullbluebike1.jpg" alt="Full Blue Bike">
+                </a>
+                <a href="fullbluebike2.jpg" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="fullbluebike2.jpg" alt="Full Blue Bike">
+                </a>
+                <a href="fullbluebike3.jpg" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="fullbluebike3.jpg" alt="Full Blue Bike">
+                </a>
+                <a href="fullbluebike4.jpg" data-lightbox="bikes" data-title="Full Blue Bike">
+                    <img src="fullbluebike4.jpg" alt="Full Blue Bike">
+                </a>
+                <h3>Full Blue Bike</h3>
+                <p>Additional Details</p>
+            </div>
+            <!-- Red Bike -->
+            <div class="bike">
+                <!-- Red Bike images -->
+                <a href="redbike.jpg" data-lightbox="bikes" data-title="Red Bike">
+                    <img src="redbike.jpg" alt="Red Bike">
+                </a>
+                <a href="redbike2.jpg" data-lightbox="bikes" data-title="Red Bike">
+                    <img src="redbike2.jpg" alt="Red Bike">
+                </a>
+                <a href="redbike3.jpg" data-lightbox="bikes" data-title="Red Bike">
+                    <img src="redbike3.jpg" alt="Red Bike">
+                </a>
+                <a href="redbike4.jpg" data-lightbox="bikes" data-title="Red Bike">
+                    <img src="redbike4.jpg" alt="Red Bike">
+                </a>
+                <h3>Red Bike</h3>
+                <p>2000W Motor, 65km/h</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone: <a href="tel:920565991">920565991</a></p>
+        <p>Email: <a href="mailto:bdbike2021@gmail.com">bdbike2021@gmail.com</a></p>
+        <p>Location: R. Barão de Sabrosa 66B, 1900-082 Lisboa</p>
+        <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100070068496719" target="_blank">Follow</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BD Bike</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
